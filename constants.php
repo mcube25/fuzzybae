@@ -103,3 +103,38 @@ while($x <= 5) {
     $x++;
 } 
 ?>
+<?php 
+$x = 6;
+
+do {
+    echo "The number is: $x <br>";
+    $x++;
+} while ($x <= 5);
+?>
+//for loop is used when you know in advance how many times the code is supposed to run
+for (init counter; test counter; increment counter) {
+    code to be executed;
+}
+<?php 
+for ($x = 0; $x <= 10; $x++) {
+    echo "The number is: $x <br>";
+} 
+?>
+//foreach loop works only on arrays,and is used to loop through each key value pair in an array.
+foreach ($array as $value) {
+    code to be executed;
+}
+<?php 
+$colors = array("red", "green", "blue", "yellow"); 
+
+foreach ($colors as $value) {
+    echo "$value <br>";
+}
+?>
+<?php
+function writeMsg() {
+    echo "Hello world!";
+}
+
+writeMsg(); // call the function
+?>
