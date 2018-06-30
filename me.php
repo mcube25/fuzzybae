@@ -105,3 +105,28 @@ echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ".";
 $cars = array ('bmw', 'box','honda');
 echo .$cars[0].;
 ?>
+<?php
+$cars = array("Volvo", "BMW", "Toyota");
+echo count($cars);
+?>
+//associative arrays use named keys e.g 
+<?php
+$cars =array('peter'=>'35','bmw'=>'22','benz'=>'33');
+echo 'peter is'.$cars['peter']. 'cars old';
+?>
+<?php
+$cars = array("Volvo", "BMW", "Toyota");
+$arrlength = count($cars);
+
+for($x = 0; $x < $arrlength; $x++) {
+    echo $cars[$x];
+    echo "<br>";
+}
+?>
+//loop through associative arrays 
+<?php
+$class=array('grade1'=>'2','grade2'=>'31','grade3'=>'22');
+foreach($class as $x =>$x_value){
+    echo 'key='.$x.',value='.$x_value;
+}
+?>
