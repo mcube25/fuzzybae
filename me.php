@@ -58,3 +58,50 @@ echo strpos('helloworld','world');
 <?php
 echo str_replace('me','house', 'hello house');
 ?>
+<?php
+function familyName($fname) {
+    echo "$fname Refsnes.<br>";
+}
+
+familyName("Jani");
+familyName("Hege");
+familyName("Stale");
+familyName("Kai Jim");
+familyName("Borge");
+?>
+<?php
+function familyName($fname, $year) {
+    echo "$fname Refsnes. Born in $year <br>";
+}
+
+familyName("Hege", "1975");
+familyName("Stale", "1978");
+familyName("Kai Jim", "1983");
+?>
+<?php
+function familyName($fname, $year) {
+    echo "$fname Refsnes. Born in $year <br>";
+}
+
+familyName("Hege", "1975");
+familyName("Stale", "1978");
+familyName("Kai Jim", "1983");
+?>
+<?php
+function sum($x, $y) {
+    $z = $x + $y;
+    return $z;
+}
+
+echo "5 + 10 = " . sum(5, 10) . "<br>";
+echo "7 + 13 = " . sum(7, 13) . "<br>";
+echo "2 + 4 = " . sum(2, 4);
+?>
+<?php
+$cars = array("Volvo", "BMW", "Toyota");
+echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ".";
+?>
+<?php
+$cars = array ('bmw', 'box','honda');
+echo .$cars[0].;
+?>
