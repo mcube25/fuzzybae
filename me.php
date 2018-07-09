@@ -150,3 +150,15 @@ class building {
 $pale = new building ();
 echo $pale->style ;
 ?>
+<?php
+//to create a php constant
+//use the define function
+define ('pale102', 'thanks with love', true);
+function myHouse(){
+    echo pale102 ;
+}
+?>
+<?php 
+
+
+?>
