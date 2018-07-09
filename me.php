@@ -130,3 +130,23 @@ foreach($class as $x =>$x_value){
     echo 'key='.$x.',value='.$x_value;
 }
 ?>
+<?php 
+class car {
+    function car (){
+        $this->model = 'merc'
+    }
+}
+//create an odbc_fetch_object
+$herbie = new car();
+//show object properties
+echo $herbie->model ;
+?>
+<?php 
+class building {
+  function building (){
+      $this->style = 'empire state'
+  }  
+}
+$pale = new building ();
+echo $pale->style ;
+?>
