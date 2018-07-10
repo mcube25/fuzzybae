@@ -160,5 +160,39 @@ function myHouse(){
 ?>
 <?php 
 
-
+$time = date('H');
+if ($time < '20'){
+    echo 'thats great';
+}else{
+    echo 'its all right';
+}
+?>
+<?php
+$color = array ('1','2','3');
+if ($color == array[1]){
+    echo 'its blue black';
+}elseif ($color > array [1]){
+    echo 'not great';
+}else{
+    echo 'its all good'
+}
+?>
+<?php
+$favcolor = 'red';
+switch ($favcolor){
+    case 'red':
+    echo 'your favourite color is red';
+    break;
+    case 'blue':
+    echo 'your favourite color is blue'
+    break;
+    case 'green':
+    echo 'your favourite color is green'
+    break;
+    case 'brown':
+    echo 'your favourite color is brown'
+    break;
+    default: 
+    echo 'your favourite color is neither'
+}
 ?>
