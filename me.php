@@ -196,3 +196,19 @@ switch ($favcolor){
     echo 'your favourite color is neither'
 }
 ?>
+<?php
+//while loop talks about when the condition is true,code to  be executed
+$x = 1;
+while ($x <= 5){
+    print 'the number is : $x <br>';
+    $x++;
+}
+?>
+<?php
+//do while loop executes the code the first time even if the condition is false
+$x = 1;
+do {
+    echo 'the number is : $x <br>';
+    $x++;
+} while ($x <= 5);
+?>
